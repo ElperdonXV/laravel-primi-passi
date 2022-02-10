@@ -21,3 +21,22 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 })->name('home');
+
+Route::get('/contatti', function(){
+    $data = [
+        'contatti'=> [
+            'telefono' => '123456789',
+            'mail' => 'pincopallo@says.com',
+        ]
+        ];
+    return view('contatti', $data);    
+})->name('contatti');
+
+Route::get('/dove-siamo', function() {
+    $data = [
+        'indirizzo' => 'Via pinco pallo n.45',
+        'citta' => 'Mirabilandia',
+        'citofono' => 'Pallo Pinco'
+    ];
+    return view('dove-siamo', $data);
+})->name('dove-siamo');
