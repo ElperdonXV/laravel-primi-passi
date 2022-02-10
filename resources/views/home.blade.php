@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,5 +10,9 @@
 <body>
     <h1>Hello World</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum tempore, architecto nulla pariatur dolores corporis neque delectus eligendi mollitia est blanditiis quaerat necessitatibus, distinctio tenetur provident nesciunt nam minima omnis.</p>
+    <div>
+        <h2>{{$name}} {{$surname}}</h2>
+        <p>{{$says}}</p>
+    </div>
 </body>
 </html>
