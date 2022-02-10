@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="{{route('home')}}">Home</a></li>
+            <li><a href="{{route('contatti')}}">Contatti</a></li>
+            <li><a href="{{route('dove-siamo')}}">Dove Siamo</a></li>
+        </ul>
+    </nav>
     <h1>Dove siamo</h1>
+    <p>Indirizzo: {{$indirizzo}}, Città: {{$citta}}, Citofono: {{$citofono}}.</p>
 </body>
 </html>

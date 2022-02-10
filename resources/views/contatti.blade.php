@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="{{route('home')}}">Home</a></li>
+            <li><a href="{{route('contatti')}}">Contatti</a></li>
+            <li><a href="{{route('dove-siamo')}}">Dove Siamo</a></li>
+        </ul>
+    </nav>
     <h1>Contatti</h1>
+    @foreach($contatti as $contatto)
+    <div>{{$contatto}}</div>
+    @endforeach
 </body>
 </html>
